@@ -1,13 +1,14 @@
 {
-  "name": "react-example",
+  "name": "rag-engineering-enterprise-ai",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Beyond the Chatbot: Engineering Reliable Retrieval-Augmented Generation (RAG) Systems for Enterprise AI - Technical Blog & Engineering Portfolio by Jiten Moni Das",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "clean": "rm -rf dist server.js",
+    "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
