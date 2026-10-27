@@ -60,7 +60,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ onNavigateTab }) => {
               Technical Blog Article
             </span>
             <span className="px-3 py-1 text-xs font-semibold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-              HubCredo Writing Sample
+              Production Systems Guide
             </span>
             <span className="px-3 py-1 text-xs font-medium rounded-full bg-slate-800 text-slate-300 border border-slate-700">
               AI/ML & Data Engineering

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Layers, ArrowRight, ShieldCheck, Database, Zap, AlertTriangle, Eye, GitBranch, Lock } from 'lucide-react';
+import { EngineeringVisuals } from './EngineeringVisuals';
 
 interface StageDetail {
   id: string;
@@ -271,6 +272,11 @@ export const ArchitectureDiagram: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Algorithmic & Systems Engineering Graphics */}
+      <div className="mt-12">
+        <EngineeringVisuals />
       </div>
     </div>
   );

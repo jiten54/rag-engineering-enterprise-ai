@@ -19,7 +19,7 @@ export const ARTICLE_METADATA = {
   authorRole: "Technical Writer & AI/ML Data Engineering Researcher",
   authorBio: "B.Sc. in Information Technology (2024). Specializes in Python-based machine learning workflows, retrieval-augmented generation architectures, RESTful API engineering, and distributed data systems.",
   targetAudience: "AI/ML Engineers, Data Engineers, Software Architects, and Engineering Leaders",
-  targetRole: "HubCredo Technical Content Writer (AI/ML & Data Engineering)",
+  targetRole: "Enterprise AI & Information Retrieval Systems",
   estimatedWordCount: "3,250 words",
   readingTime: "14 min read",
   publicationDate: "October 2024 (Updated for 2025/2026 Enterprise Standards)"
@@ -420,79 +420,12 @@ When architected with these disciplines, RAG transforms generative AI from an un
   }
 ];
 
-export const LINKEDIN_MESSAGE_PITCH = `Hi Hansamedha,
-
-I hope you're having a productive week.
-
-I'm reaching out regarding the Technical Content Writer (AI/ML & Data Engineering) role at HubCredo. Having followed HubCredo's focus on engineering-grade technical storytelling for enterprise technology leaders, I put together an in-depth, research-backed technical article as a direct writing sample for your team:
-
-"Beyond the Chatbot: Engineering Reliable Retrieval-Augmented Generation (RAG) Systems for Enterprise AI"
-
-Instead of a surface-level overview, the piece takes a rigorous, systems-engineering perspective:
-• Breaks down the full 10-stage pipeline from layout-aware ingestion to hybrid BM25 + dense retrieval and Cross-Encoder reranking.
-• Formulates mathematical trade-offs for Reciprocal Rank Fusion (RRF) and HNSW vector indexing.
-• Analyzes enterprise security constraints, specifically indirect prompt injection (OWASP LLM01) and pre-retrieval RBAC at the database perimeter.
-• Accompanied by a reproducible FastAPI reference implementation with unit tests and an interactive simulation environment.
-
-As a 2024 IT graduate with hands-on experience developing Python workflows, machine learning pipelines, and REST APIs, my goal is to produce content that software engineers, data architects, and technical decision-makers genuinely respect.
-
-I would welcome the opportunity to share the draft and discuss how I can contribute to HubCredo's technical publications.
-
-Best regards,
-Jiten Moni Das
-jitenmoni8@gmail.com`;
-
-export const EDITORIAL_CHECKLIST = [
-  {
-    category: "Technical Correctness",
-    item: "Parametric vs. Non-Parametric distinction matches Lewis et al. (2020)",
-    status: "Verified",
-    detail: "Distinguishes model weight sampling from external vector memory; avoids claims that RAG eliminates hallucinations entirely."
-  },
-  {
-    category: "Technical Correctness",
-    item: "Reciprocal Rank Fusion (RRF) equation and parameterization",
-    status: "Verified",
-    detail: "Formula RRF(d) = Σ 1/(k + r_m(d)) correctly uses 1-indexed ranks and standard smoothing parameter k=60 (Cormack et al. 2009)."
-  },
-  {
-    category: "Technical Correctness",
-    item: "Attention degradation reference (Lost in the Middle)",
-    status: "Verified",
-    detail: "Accurately cites Liu et al. (2024 TACL, arXiv:2307.03172) regarding U-shaped position bias in long context windows."
-  },
-  {
-    category: "Code Consistency",
-    item: "FastAPI + FAISS + Sentence-Transformers Python implementation",
-    status: "Verified",
-    detail: "Uses IndexFlatIP with L2 normalization to compute exact cosine similarity without score divergence; all dependencies pinned in requirements.txt."
-  },
-  {
-    category: "Security Standards",
-    item: "OWASP Top 10 for LLM Applications (2025)",
-    status: "Verified",
-    detail: "Accurately references LLM01 (Prompt Injection) and LLM02 (Sensitive Information Disclosure); explains why RBAC must be enforced before prompt injection."
-  },
-  {
-    category: "Author Profile Compliance",
-    item: "Jiten Moni Das profile accuracy",
-    status: "Verified",
-    detail: "Reflects B.Sc. IT (2024), Python, ML, data engineering, and API experience. Strictly avoids fabricated work history or unearned senior titles."
-  },
-  {
-    category: "Citations & URLs",
-    item: "All 10 primary literature citations have direct, verified identifiers",
-    status: "Verified",
-    detail: "Includes arXiv IDs and DOIs for Lewis, Karpukhin, Robertson, Cormack, Es (Ragas), Liu, Reimers, Malkov, and Khattab."
-  }
-];
-
 export const FULL_ARTICLE_MARKDOWN = `# Beyond the Chatbot: Engineering Reliable Retrieval-Augmented Generation (RAG) Systems for Enterprise AI
 
 **Subtitle:** Architecture, retrieval strategies, evaluation, security, and production trade-offs.  
 **Author:** Jiten Moni Das  
 **Audience:** AI/ML Engineers, Data Engineers, Software Architects, and Engineering Decision-Makers  
-**Target Role:** HubCredo Technical Content Writer (AI/ML & Data Engineering Writing Sample)  
+**Field:** Enterprise AI & Distributed Information Retrieval  
 **Estimated Length:** ~3,250 words  
 
 ---
@@ -506,13 +439,5 @@ export const FULL_ARTICLE_MARKDOWN = `# Beyond the Chatbot: Engineering Reliable
 ${ARTICLE_METADATA.author} holds a Bachelor of Science in Information Technology (graduated in 2024). His technical focus centers on Python-based machine learning architectures, data engineering pipelines, generative AI systems, retrieval-augmented generation (RAG), and RESTful API engineering. He has built practical end-to-end projects spanning machine learning workflows, semantic search services, and cloud integrations. 
 
 Contact: jitenmoni8@gmail.com
-
----
-
-## LinkedIn Outreach Message for Hansamedha Ambati
-
-\`\`\`text
-${LINKEDIN_MESSAGE_PITCH}
-\`\`\`
 `;
 

@@ -5,7 +5,6 @@ import {
   TableProperties,
   PlayCircle,
   Code2,
-  Briefcase,
   Download,
   Check,
   Copy,
@@ -15,7 +14,7 @@ import {
   Share2
 } from 'lucide-react';
 
-export type ActiveTab = 'article' | 'architecture' | 'matrix' | 'simulator' | 'code' | 'kit';
+export type ActiveTab = 'article' | 'architecture' | 'matrix' | 'simulator' | 'code';
 
 interface NavbarProps {
   activeTab: ActiveTab;
@@ -41,7 +40,6 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'matrix', label: 'Retrieval Matrix', icon: <TableProperties className="w-4 h-4" />, path: '/matrix' },
     { id: 'simulator', label: 'RAG Simulator', icon: <PlayCircle className="w-4 h-4" />, path: '/simulator' },
     { id: 'code', label: 'Python Codebase', icon: <Code2 className="w-4 h-4" />, path: '/code' },
-    { id: 'kit', label: 'Outreach & Audit', icon: <Briefcase className="w-4 h-4" />, path: '/kit' },
   ];
 
   const handleTabClick = (tabId: ActiveTab) => {
@@ -75,10 +73,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                   Beyond the Chatbot: Enterprise RAG
                 </span>
                 <span className="hidden lg:inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-blue-900/60 text-blue-300 border border-blue-700/50">
-                  HubCredo Portfolio Sample
+                  AI/ML Systems Engineering
                 </span>
               </div>
-              <p className="text-xs text-slate-400">By Jiten Moni Das • Technical Writing & AI/ML Systems</p>
+              <p className="text-xs text-slate-400">By Jiten Moni Das • Distributed AI & Data Systems</p>
             </div>
           </div>
 
@@ -183,7 +181,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   onClick={() => handleTabClick(tab.id)}
                   className={`w-full flex items-center px-3 py-2 rounded-lg text-sm font-medium transition ${
                     isActive
-                      ? 'bg-blue-600/20 text-blue-400 border border-blue-500/40'
+                      ? 'bg-blue-600/20 text-blue-400 border border-blue-500/40 font-semibold'
                       : 'text-slate-300 hover:bg-slate-800'
                   }`}
                 >

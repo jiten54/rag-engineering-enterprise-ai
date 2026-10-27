@@ -1,8 +1,8 @@
 # Beyond the Chatbot: Engineering Reliable Retrieval-Augmented Generation (RAG) Systems for Enterprise AI
 
-A publication-ready, research-backed technical blog and engineering portfolio website authored by **Jiten Moni Das** for the **HubCredo Technical Content Writer (AI/ML & Data Engineering)** role.
+A publication-ready, research-backed technical blog and engineering portfolio website authored by **Jiten Moni Das**, specializing in enterprise Retrieval-Augmented Generation (RAG), LLM systems engineering, and distributed data architecture.
 
-This repository features an in-depth 3,250-word technical article, interactive 10-stage RAG architecture explorer, side-by-side retrieval trade-offs matrix, live hybrid retrieval and RBAC simulator, and a complete reproducible Python reference implementation (FastAPI, Sentence-Transformers, FAISS, BM25, and Pytest).
+This repository features an in-depth 3,250-word technical article, interactive 10-stage RAG architecture explorer, side-by-side retrieval trade-offs matrix, live hybrid retrieval and RBAC simulator, interactive algorithmic engineering graphics, and a complete reproducible Python reference implementation (FastAPI, Sentence-Transformers, FAISS, BM25, and Pytest).
 
 ---
 
@@ -31,10 +31,12 @@ This repository features an in-depth 3,250-word technical article, interactive 1
    - Tabbed source code viewer for `requirements.txt`, `app/config.py`, `app/ingestion.py`, `app/retrieval.py`, `app/main.py`, and `tests/test_retrieval.py`.
    - Syntax-highlighted code with line numbers and one-click copy and download functionality.
 
-6. **HubCredo Job Application Kit:**
-   - Customized LinkedIn outreach message for Hansamedha Ambati.
-   - Author biography for Jiten Moni Das (B.Sc. IT 2024).
-   - Comprehensive 7-point editorial and fact-checking audit checklist.
+6. **AI/ML Systems Engineering Graphics & Algorithmic Blueprints:**
+   - Interactive SVG-based technical architecture visualizations.
+   - Multi-layer HNSW graph hierarchy ($O(\log N)$ skip-list beam search and `efSearch` dynamics).
+   - Bi-Encoder vector dot-product vs. Cross-Encoder full self-attention token interaction heatmaps.
+   - Reciprocal Rank Fusion (RRF) decay curves showing reciprocal rank weighting across varying $k \in \{20, 60, 100\}$.
+   - Synchronous inference latency budget breakdown bar satisfying strict P95 $< 750$ms SLA.
 
 ---
 
@@ -68,13 +70,13 @@ rag-engineering-enterprise-ai/
 │   │   ├── ArchitectureDiagram.tsx       # 10-stage RAG pipeline explorer
 │   │   ├── ArticleView.tsx               # Technical article reader & Table of Contents
 │   │   ├── CodeExplorer.tsx              # Python repository file browser
+│   │   ├── EngineeringVisuals.tsx        # HNSW, cross-attention, RRF & latency visuals
 │   │   ├── InteractiveRAGPlayground.tsx  # Hybrid retrieval & RBAC simulator
-│   │   ├── JobApplicationKit.tsx         # LinkedIn outreach & editorial checklist
 │   │   ├── Navbar.tsx                    # Header with mobile drawer & GitHub repo link
 │   │   ├── RetrievalMatrix.tsx           # Side-by-side retrieval trade-offs
 │   │   └── VisualMermaidFlow.tsx         # Dual visual / raw Mermaid architecture
 │   ├── data/
-│   │   ├── articleContent.ts             # 13 article sections, metadata, LinkedIn message
+│   │   ├── articleContent.ts             # 13 article sections and publication metadata
 │   │   ├── citations.ts                  # Primary literature citations & retrieval matrix
 │   │   ├── codeFiles.ts                  # Production Python reference implementation
 │   │   └── interactiveSimulator.ts       # Synthetic enterprise corpus & RRF scoring engine
@@ -155,7 +157,7 @@ vercel --prod
 ### Vercel Configuration Details (`vercel.json`)
 
 The included `vercel.json` ensures:
-- **Client-Side SPA Routing:** Direct URL requests (`/article`, `/architecture`, `/matrix`, `/simulator`, `/code`, `/kit`) rewrite to `/index.html`, eliminating 404 errors on page reload.
+- **Client-Side SPA Routing:** Direct URL requests (`/article`, `/architecture`, `/matrix`, `/simulator`, `/code`) rewrite to `/index.html`, eliminating 404 errors on page reload.
 - **Cache Optimization:** Immutable 1-year caching for static `/assets/*` chunks.
 - **Security Headers:** `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `X-XSS-Protection: 1; mode=block`, and `Referrer-Policy: strict-origin-when-cross-origin`.
 
@@ -188,7 +190,7 @@ uvicorn app.main:app --port 8000 --reload
 - **Degree:** B.Sc. in Information Technology (Graduated 2024)
 - **Specializations:** Python, Machine Learning, Information Retrieval, RAG Architectures, REST APIs, and Data Engineering.
 - **Email:** [jitenmoni8@gmail.com](mailto:jitenmoni8@gmail.com)
-- **Role Target:** HubCredo Technical Content Writer (AI/ML & Data Engineering)
+- **Focus:** Enterprise AI & Distributed Information Retrieval Systems
 
 ---
 

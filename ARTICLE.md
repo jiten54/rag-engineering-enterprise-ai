@@ -3,7 +3,7 @@
 **Subtitle:** Architecture, retrieval strategies, evaluation, security, and production trade-offs.  
 **Author:** Jiten Moni Das  
 **Audience:** AI/ML Engineers, Data Engineers, Software Architects, and Engineering Decision-Makers  
-**Target Role:** HubCredo Technical Content Writer (AI/ML & Data Engineering Writing Sample)  
+**Field:** Enterprise AI & Distributed Information Retrieval  
 **Estimated Length:** ~3,250 words  
 
 ---
@@ -720,44 +720,3 @@ When architected with these disciplines, RAG transforms generative AI from an un
 
 *Contact:* [jitenmoni8@gmail.com](mailto:jitenmoni8@gmail.com)
 
----
-
-## LinkedIn Outreach Message for Hansamedha Ambati
-
-```text
-Hi Hansamedha,
-
-I hope you're having a productive week.
-
-I'm reaching out regarding the Technical Content Writer (AI/ML & Data Engineering) role at HubCredo. Having followed HubCredo's focus on engineering-grade technical storytelling for enterprise technology leaders, I put together an in-depth, research-backed technical article as a direct writing sample for your team:
-
-"Beyond the Chatbot: Engineering Reliable Retrieval-Augmented Generation (RAG) Systems for Enterprise AI"
-
-Instead of a surface-level overview, the piece takes a rigorous, systems-engineering perspective:
-• Breaks down the full 10-stage pipeline from layout-aware ingestion to hybrid BM25 + dense retrieval and Cross-Encoder reranking.
-• Formulates mathematical trade-offs for Reciprocal Rank Fusion (RRF) and HNSW vector indexing.
-• Analyzes enterprise security constraints, specifically indirect prompt injection (OWASP LLM01) and pre-retrieval RBAC at the database perimeter.
-• Accompanied by a reproducible FastAPI reference implementation with unit tests and an interactive simulation environment.
-
-As a 2024 IT graduate with hands-on experience developing Python workflows, machine learning pipelines, and REST APIs, my goal is to produce content that software engineers, data architects, and technical decision-makers genuinely respect.
-
-I would welcome the opportunity to share the draft and discuss how I can contribute to HubCredo's technical publications.
-
-Best regards,
-Jiten Moni Das
-jitenmoni8@gmail.com
-```
-
----
-
-## Editorial Verification Checklist
-
-| Category | Verification Item | Status | Verification Detail |
-| :--- | :--- | :--- | :--- |
-| **Technical Accuracy** | Parametric vs. Non-Parametric Distinction | Verified | Accurately references Lewis et al. (2020); distinguishes statistical token decoding from vector store retrieval; explicitly affirms that RAG does not eliminate hallucinations. |
-| **Mathematical Formulation** | Reciprocal Rank Fusion (RRF) | Verified | Formula $RRF(d) = \sum 1/(k + r(d))$ correctly uses 1-indexed ranks and standard smoothing parameter $k=60$ (Cormack et al. 2009). |
-| **Empirical Grounding** | "Lost in the Middle" Citation | Verified | Accurately cites Liu et al. (2024 TACL, arXiv:2307.03172) regarding U-shaped position bias in long context windows. |
-| **Code Integrity** | Python FastAPI + FAISS Reference Implementation | Verified | Uses `IndexFlatIP` with $L_2$ vector normalization to compute exact cosine similarity without score divergence; all dependencies pinned in `requirements.txt`. |
-| **Security Standards** | OWASP Top 10 for LLM Applications (2025) | Verified | Directly references LLM01 (Prompt Injection) and LLM02 (Sensitive Information Disclosure); explains why RBAC must be enforced before retrieval. |
-| **Author Profile Integrity** | Jiten Moni Das Biography | Verified | Accurately represents B.Sc. IT (2024) and practical technical interests without fabricated employment, unearned senior titles, or false metrics. |
-| **Source Provenance** | Primary Literature Links | Verified | All 10 references feature verified arXiv preprints, DOIs, or official project portals. |

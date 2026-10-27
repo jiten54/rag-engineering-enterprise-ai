@@ -10,7 +10,6 @@ import { ArchitectureDiagram } from './components/ArchitectureDiagram';
 import { RetrievalMatrix } from './components/RetrievalMatrix';
 import { InteractiveRAGPlayground } from './components/InteractiveRAGPlayground';
 import { CodeExplorer } from './components/CodeExplorer';
-import { JobApplicationKit } from './components/JobApplicationKit';
 import { FULL_ARTICLE_MARKDOWN, ARTICLE_METADATA } from './data/articleContent';
 import { Mail, Github, FileText, ArrowLeft } from 'lucide-react';
 
@@ -20,7 +19,6 @@ const TAB_TO_PATH: Record<ActiveTab, string> = {
   matrix: '/matrix',
   simulator: '/simulator',
   code: '/code',
-  kit: '/kit',
 };
 
 const PATH_TO_TAB: Record<string, ActiveTab> = {
@@ -30,8 +28,6 @@ const PATH_TO_TAB: Record<string, ActiveTab> = {
   '/matrix': 'matrix',
   '/simulator': 'simulator',
   '/code': 'code',
-  '/kit': 'kit',
-  '/outreach': 'kit',
 };
 
 export default function App() {
@@ -132,7 +128,6 @@ export default function App() {
             {activeTab === 'matrix' && <RetrievalMatrix />}
             {activeTab === 'simulator' && <InteractiveRAGPlayground />}
             {activeTab === 'code' && <CodeExplorer />}
-            {activeTab === 'kit' && <JobApplicationKit />}
           </>
         )}
       </main>
@@ -145,7 +140,7 @@ export default function App() {
               Beyond the Chatbot: Engineering Reliable RAG Systems for Enterprise AI
             </p>
             <p className="mt-0.5 text-slate-400">
-              Author: <span className="text-slate-300 font-medium">{ARTICLE_METADATA.author}</span> • Prepared for HubCredo Technical Content Writer Sample
+              Author: <span className="text-slate-300 font-medium">{ARTICLE_METADATA.author}</span> • Enterprise AI & Retrieval-Augmented Generation Systems
             </p>
           </div>
 
@@ -179,12 +174,6 @@ export default function App() {
               className="hover:text-blue-400 transition"
             >
               Python Code
-            </button>
-            <button
-              onClick={() => handleTabChange('kit')}
-              className="hover:text-blue-400 transition"
-            >
-              Audit & Outreach
             </button>
             <a
               href="https://github.com/jiten54/rag-engineering-enterprise-ai"
