@@ -1,0 +1,6 @@
+{
+  "name": "Reliable Enterprise RAG Systems - Technical Publication & Simulator",
+  "description": "Publication-ready technical article, interactive retrieval simulator, architecture diagrams, and Python implementation for HubCredo technical content writing sample.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
