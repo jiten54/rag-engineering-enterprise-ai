@@ -187,7 +187,7 @@ export default function App() {
               Audit & Outreach
             </button>
             <a
-              href="https://github.com/jitenmoni/rag-engineering-enterprise-ai"
+              href="https://github.com/jiten54/rag-engineering-enterprise-ai"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-slate-300 hover:text-white transition"

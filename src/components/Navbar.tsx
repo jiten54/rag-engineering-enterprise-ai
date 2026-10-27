@@ -85,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Desktop Actions */}
           <div className="hidden sm:flex items-center space-x-2">
             <a
-              href="https://github.com/jitenmoni/rag-engineering-enterprise-ai"
+              href="https://github.com/jiten54/rag-engineering-enterprise-ai"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-3 py-1.5 text-xs font-medium rounded-md bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition"
@@ -194,7 +194,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             })}
             <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs px-2">
               <a
-                href="https://github.com/jitenmoni/rag-engineering-enterprise-ai"
+                href="https://github.com/jiten54/rag-engineering-enterprise-ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-slate-300 hover:text-blue-400 py-1"

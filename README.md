@@ -92,7 +92,7 @@ rag-engineering-enterprise-ai/
 
 ### 1. Clone Repository & Install Dependencies
 ```bash
-git clone https://github.com/jitenmoni/rag-engineering-enterprise-ai.git
+git clone https://github.com/jiten54/rag-engineering-enterprise-ai.git
 cd rag-engineering-enterprise-ai
 npm install
 ```

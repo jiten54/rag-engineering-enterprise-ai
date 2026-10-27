@@ -66,7 +66,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ onNavigateTab }) => {
               AI/ML & Data Engineering
             </span>
             <a
-              href="https://github.com/jitenmoni/rag-engineering-enterprise-ai"
+              href="https://github.com/jiten54/rag-engineering-enterprise-ai"
               target="_blank"
               rel="noopener noreferrer"
               className="px-3 py-1 text-xs font-medium rounded-full bg-slate-800/80 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center space-x-1"
